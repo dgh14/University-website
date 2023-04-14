@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- ---------------------HEADER - SECTION------------------- -->
+
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Course</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certifications and Awards</h1>
+    </section>
+
+    <!-- -----------------------our blog content--------------------- -->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="img/certificate.jpg" />
+          <h2>Our Certifications and Awards</h2>
+          <p>
+            Our research contributes to solving social, economic and
+            environmental challenges the world is facing today and into the
+            future. We’re tightly connected with our communities, at home and
+            abroad, which only enriches our learning, teaching, and research.
+          </p>
+          <br />
+          <p>
+            The academic board is held responsible to the council for quality
+            assurance in activities such as the maintenance of high standards in
+            teaching, research and learning. The University of Melbourne
+            Executive is the university's principal management committee. The
+            university consists of academic and administrative structures.
+            University leadership encompasses the chancellor, vice-chancellor
+            and senior executives, who are responsible for the strategic vision
+            of the university.
+          </p>
+          <br />
+          <p>
+            The University of Melbourne's operations are governed through a
+            hierarchy of delegations framework. A 13-member council is the
+            university's governing body. It establishes the university's
+            council, determines its core functions, and allows the university to
+            enact subordinate legislation through statutes and regulations.
+            Under legislative elements associated with the council, university
+            policies exist as a formal statement of principle to regulate
+            university operations. Under university policies, university
+            processes exist to support workplace agreements, policy, and
+            relevant legislation by noting day-to-day operation tasks and
+            activities to be performed by staff.
+          </p>
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Post Comment
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Business Analytics</span>
+            <span>14</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Data Analytics</span>
+            <span>10</span>
+          </div>
+          <div>
+            <span>Machine Learning</span>
+            <span>30</span>
+          </div>
+          <div>
+            <span>Computer Science</span>
+            <span>11</span>
+          </div>
+          <div>
+            <span>Journalism</span>
+            <span>4</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------footer---------------- -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Call us to know more</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart"></i> by Dhanush GH</p>
+    </section>
+
+    <!-- ----------------JAVASCRIPT-FOR-TOGGLE-MENU--------------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

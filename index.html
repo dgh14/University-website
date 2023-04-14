@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- ---------------------HEADER - SECTION------------------- -->
+
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Course</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Worlds Biggest University</h1>
+        <p>This is a basic website done by using <br />HTML and CSS</p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+      </div>
+    </section>
+
+    <!-- -----------------------COURSE - SECTION------------------------->
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>These are all the courses we offer at the University</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            this ia a simple text to check the courses offered in the university
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            this ia a simple text to check the courses offered in the university
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            this ia a simple text to check the courses offered in the university
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------Campus---------------------------->
+
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>This is our campus and we love it so much</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="img/london.png" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="img/newyork.png" />
+          <div class="layer">
+            <h3>New York</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="img/washington.png" />
+          <div class="layer">
+            <h3>Washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------Facilities---------------------------- -->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Our Facility is very good and clean at the same fa-times</p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="img/library.png" />
+          <h3>World class Library</h3>
+          <p>Our Library is one of a kind</p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/basketball.png" />
+          <h3>Big Courts</h3>
+          <p>Largest Basketball Court</p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/cafeteria.png" />
+          <h3>Well kept Cafe</h3>
+          <p>Yummy food at the cafe</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------Testimonials---------------------------- -->
+
+    <section class="testimonials">
+      <h1>Our students words</h1>
+      <p>Lets hear our students thoughts</p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="img/user1.jpg" />
+          <div>
+            <p>this the user 1</p>
+            <h3>Monica</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="img/user2.jpg" />
+          <div>
+            <p>this the user 2</p>
+            <h3>Frank</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------Call to Know---------------------- -->
+
+    <section class="cta">
+      <h1>Enroll for our Various courses from <br />around the world</h1>
+      <a href="" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- -------------------footer---------------- -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Call us to know more</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart"></i> by Dhanush GH</p>
+    </section>
+
+    <!-- ----------------JAVASCRIPT-FOR-TOGGLE-MENU--------------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
